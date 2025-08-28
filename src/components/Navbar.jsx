@@ -2,14 +2,15 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-scroll";
 
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   const links = [
     { id: "home", label: "Home" },
     { id: "about", label: "About" },
-    { id: "schedule", label: "Schedule" },
     { id: "events", label: "Events" },
+    { id: "schedule", label: "Schedule" },
     { id: "register", label: "Register" },
   ];
 
@@ -24,7 +25,7 @@ const Navbar = () => {
           transition={{ duration: 0.6 }}
           className="text-2xl font-bold text-cyan-400 tracking-wide drop-shadow-[0_0_10px_rgba(0,255,255,0.8)]"
         >
-          TechFucsion
+          TechFusion
         </motion.h1>
 
         {/* Desktop Nav */}

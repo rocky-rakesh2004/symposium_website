@@ -3,7 +3,16 @@ import SectionWrapper from "../components/SectionWrapper";
 const Register = () => {
   return (
     <SectionWrapper id="register" className="bg-black text-white">
-      <h2 className="text-3xl md:text-4xl font-bold mb-6">Register</h2>
+           <h1
+        className="text-4xl md:text-6xl font-extrabold text-center mb-12"
+        style={{
+          fontFamily: "'Cinzel Decorative', serif",
+          textShadow:
+            "0 0 10px rgba(0, 255, 255, 0.7), 0 0 20px rgba(0, 255, 255, 0.6), 0 0 40px rgba(0, 255, 255, 0.5)",
+        }}
+      >
+        Register
+      </h1>
       <form className="bg-gray-900 p-6 rounded-xl shadow-md w-full max-w-md">
         <input
           type="text"

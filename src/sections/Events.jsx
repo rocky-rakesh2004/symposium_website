@@ -1,9 +1,7 @@
+// src/components/Events.jsx
 import { useState } from "react";
-import { FaUser, FaRocket } from "react-icons/fa";
+import EventCard from "./EventCard";
 
-
-
-// Data
 const eventsData = {
   technical: [
     {
@@ -14,6 +12,17 @@ const eventsData = {
       hosts: "Nikhil Srinivasan S, Soorya",
       image:
         "https://tse4.mm.bing.net/th/id/OIP.VrOLCd2txAYP1s4JNpwSVQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+      date: "Apr 25, 2025",
+      time: "9:00 AM – 1:00 PM",
+      venue: "CSE Lab",
+      members: "1–4 members",
+      contacts: "Nikhil: 6369510662, Soorya: 9176313108",
+      rules: ["10 min per team", "Q&A 2–3 mins", "Original work only"],
+      prizes: ["Winner: ₹5000", "Runner-up: ₹3000"],
+      gallery: [
+        "https://images.unsplash.com/photo-1551836022-4c4c79ecde51?auto=format&fit=crop&w=800&q=80",
+        "https://th.bing.com/th/id/R.69a196915f658989e3b2e0188211ccc2?rik=ARm6gOfJ7FBY1Q&riu=http%3a%2f%2fnebulus.aitm.edu.in%2fwp-content%2fuploads%2f2016%2f03%2fPaper-Presentation.jpg&ehk=KqCsfG9pGepHmzZgY2%2bjApQ65dybW43Y7dYsVMxBAeg%3d&risl=&pid=ImgRaw&r=0",
+      ],
     },
     {
       title: "Technical Quiz",
@@ -21,8 +30,12 @@ const eventsData = {
       description:
         "Test your knowledge across multiple domains of science and technology.",
       hosts: "Preetha P, Muthu Jayashree",
-      image:
-        "https://i.ytimg.com/vi/eBUWqcuu58c/maxresdefault.jpg",
+      image: "https://i.ytimg.com/vi/eBUWqcuu58c/maxresdefault.jpg",
+      date: "Apr 26, 2025",
+      time: "10:00 AM – 12:00 PM",
+      venue: "Seminar Hall",
+      members: "Team of 2",
+      contacts: "Preetha: 9876543210",
     },
     {
       title: "Code Debugging",
@@ -132,11 +145,8 @@ function Events() {
         className="text-4xl md:text-6xl font-extrabold text-center mb-12"
         style={{
           fontFamily: "'Cinzel Decorative', serif",
-          textShadow: `
-              0 0 10px rgba(0, 255, 255, 0.7),
-              0 0 20px rgba(0, 255, 255, 0.6),
-              0 0 40px rgba(0, 255, 255, 0.5)
-            `,
+          textShadow:
+            "0 0 10px rgba(0, 255, 255, 0.7), 0 0 20px rgba(0, 255, 255, 0.6), 0 0 40px rgba(0, 255, 255, 0.5)",
         }}
       >
         🎉 Events
@@ -162,43 +172,7 @@ function Events() {
       {/* Events Grid */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
         {eventsData[activeTab].map((event, index) => (
-          <div
-            key={index}
-            className="bg-gradient-to-br from-[#0f172a] to-[#1e293b] border border-cyan-400/30 rounded-3xl shadow-lg p-6 flex flex-col justify-between 
-            hover:scale-105 hover:shadow-cyan-400/50 transition-all duration-500 hover:-rotate-1"
-          >
-            {/* Image */}
-            <img
-              src={event.image}
-              alt={event.title}
-              className="w-full h-44 object-cover rounded-xl mb-4"
-            />
-
-            {/* Title */}
-            <h4 className="text-2xl font-bold text-cyan-400 mb-2 text-center">
-              {event.title}
-            </h4>
-            <p className="text-blue-300 text-sm font-semibold text-center mb-3">
-              {event.type}
-            </p>
-
-            {/* Description */}
-            <p className="text-gray-300 text-sm text-center">
-              {event.description}
-            </p>
-
-            {/* Hosts */}
-            <div className="flex items-center justify-center gap-2 text-gray-400 text-sm mt-4">
-              <FaUser className="text-cyan-400" />
-              {event.hosts}
-            </div>
-
-            {/* Register Button */}
-            <button className="group mt-5 w-full py-2 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 font-semibold shadow-md flex items-center justify-center gap-2 hover:from-blue-600 hover:to-cyan-500 transition-all duration-500">
-              Register
-              <FaRocket className="opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            </button>
-          </div>
+          <EventCard key={`${activeTab}-${index}`} event={event} />
         ))}
       </div>
     </section>

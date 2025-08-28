@@ -83,21 +83,29 @@ function About() {
         </div>
       </div>
 
-      {/* Right Image Section */}
-      <div className="md:w-1/2 flex justify-center">
-        <div className="relative">
-          <img
-            src="/assets/college2.png"
-            alt="College"
-            className="rounded-2xl shadow-lg border-4 border-cyan-400/40 transition-transform duration-500 hover:rotate-2 hover:scale-105"
-          />
-          <img
-            src="/assets/aaa.png"
-            alt="College Event"
-            className="absolute bottom-[-40px] right-[-40px] w-48 rounded-2xl shadow-lg border-4 border-cyan-300/40 transition-transform duration-500 hover:-rotate-2 hover:scale-105"
-          />
-        </div>
-      </div>
+     {/* Right Image Section */}
+<div className="md:w-1/2 flex justify-center">
+  <div className="relative">
+    {/* Main College Image */}
+    <img
+      src="https://www.campusoption.com/images/colleges/gallery/20_01_17_101724_aaa_clg.jpg"
+      alt="College Campus"
+      className="rounded-2xl shadow-lg border-4 border-cyan-400/40 
+      transition-transform duration-500 hover:rotate-2 hover:scale-105 
+      hover:shadow-cyan-500/60 hover:shadow-2xl"
+    />
+
+    {/* Secondary Logo/Event Image */}
+    <img
+      src="https://education.indianexpress.com/_next/image?url=https:%2F%2Feducation.indianexpress.com%2Fstorage%2Fimages%2Faaa-college-of-engineering-and-technologylogo_1709104049.png&w=256&q=75"
+      alt="Symposium Event"
+      className="absolute bottom-[-40px] right-[-40px] w-48 rounded-2xl shadow-lg border-4 border-cyan-300/40 
+      transition-transform duration-500 hover:-rotate-2 hover:scale-105 
+      hover:shadow-cyan-400/60 hover:shadow-xl bg-black p-2"
+    />
+  </div>
+</div>
+
     </section>
   );
 }
