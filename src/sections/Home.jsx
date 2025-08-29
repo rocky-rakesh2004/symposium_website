@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Lightning from "../components/Lighting";
 import TextType from "../components/TextType";
-
+import StarBorder from './StarBorder';
 
 // 🎆 Fireworks + Rockets Component
 function Fireworks() {
@@ -166,15 +166,34 @@ function Home() {
           </h2>
         )}
 
-        {/* Button only visible before start */}
-        {typeof timeLeft === "object" && (
-          <a
-            href="#about"
-            className="mt-10 inline-block bg-red-600 text-white font-bold px-10 py-3 rounded-2xl shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-[0_0_25px_rgba(255,0,0,0.9)] animate-[pulseGlow_1.8s_ease-in-out_infinite]"
-          >
-            Learn More
-          </a>
-        )}
+       {/* Buttons only visible before start */}
+{/* Buttons only visible before start */}
+{typeof timeLeft === "object" && (
+  <div className="mt-10 flex flex-col items-center gap-6">
+    {/* Learn More Button */}
+    <a
+      href="#schedule"
+      className="inline-block bg-red-600 text-white font-bold px-10 py-3 rounded-2xl shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-[0_0_25px_rgba(255,0,0,0.9)] animate-[pulseGlow_1.8s_ease-in-out_infinite]"
+    >
+      Events Schedule
+    </a>
+
+    {/* Register Button inside StarBorder */}
+    <StarBorder
+      as="a"
+      href="#register"
+      className="bg-orange-500 text-white font-bold  hover:scale-110 animate-[pulseGlow_1.8s_ease-in-out_infinite]"
+      color="cyan"
+      speed="5s"
+    >
+      Register Now !
+    </StarBorder>
+  </div>
+)}
+
+
+
+        
       </div>
     </div>
   );
