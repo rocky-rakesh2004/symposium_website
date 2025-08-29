@@ -10,6 +10,11 @@ html {
   width: 100%;
   height: 100%;
 }
+.lightning-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
 
 .text-type {
   display: inline-block;
@@ -24,4 +29,36 @@ html {
 
 .text-type__cursor--hidden {
   display: none;
+}
+/* Neon red pulse for the button */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.6),
+                0 0 20px rgba(255, 0, 0, 0.6),
+                0 0 30px rgba(255, 0, 0, 0.6);
+    transform: translateZ(0) scale(1);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.9),
+                0 0 40px rgba(255, 0, 0, 0.9),
+                0 0 60px rgba(255, 0, 0, 0.9);
+    transform: translateZ(0) scale(1.03);
+  }
+}
+
+/* Smooth shifting aurora background */
+@keyframes auroraFlow {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Default font for whole site */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Orbitron only for headings */
+h1, h2, h3, .heading {
+  font-family: 'Orbitron', sans-serif;
 }

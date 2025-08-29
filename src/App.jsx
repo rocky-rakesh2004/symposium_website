@@ -17,8 +17,8 @@ function App() {
 <Navbar />
 <Home />
 <About/>
-<Events/>
 <Schedule/>
+<Events/>
 <Register/>
 <Footer/>
 </div>

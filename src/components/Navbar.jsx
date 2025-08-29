@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-scroll";
+import Logo from "../assets/image.png";
+
+
+
 
 
 const Navbar = () => {
@@ -9,8 +13,8 @@ const Navbar = () => {
   const links = [
     { id: "home", label: "Home" },
     { id: "about", label: "About" },
-    { id: "events", label: "Events" },
     { id: "schedule", label: "Schedule" },
+    { id: "events", label: "Events" },
     { id: "register", label: "Register" },
   ];
 
@@ -19,14 +23,27 @@ const Navbar = () => {
                     border-b border-cyan-400 shadow-[0_0_15px_rgba(0,255,255,0.6)]">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
         {/* Logo */}
-        <motion.h1
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-2xl font-bold text-cyan-400 tracking-wide drop-shadow-[0_0_10px_rgba(0,255,255,0.8)]"
-        >
-          TechFusion
-        </motion.h1>
+        <div className="flex items-center gap-3">
+          <motion.img
+            src={Logo}
+            alt="TechFusion Logo"
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            className="w-12 h-12 md:w-14 md:h-14 drop-shadow-[0_0_15px_rgba(0,255,255,0.8)]"
+          />
+          <motion.h1
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-2xl font-bold text-cyan-400 tracking-wide drop-shadow-[0_0_10px_rgba(0,255,255,0.8)]"
+          >
+            TechFusion
+          </motion.h1>
+        </div>
+
+
+
 
         {/* Desktop Nav */}
         <ul className="hidden md:flex space-x-8">
