@@ -1,6 +1,7 @@
 // src/components/Events.jsx
 import { useState } from "react";
 import EventCard from "./EventCard";
+import SplashCursor from "./SplashCursor"; // ✅ import here
 
 const eventsData = {
   technical: [
@@ -138,8 +139,11 @@ function Events() {
   return (
     <section
       id="events"
-      className="w-full min-h-screen bg-gradient-to-b from-black via-[#0a0f1f] to-black text-white px-6 md:px-16 py-16 font-sans"
+      className="relative w-full min-h-screen bg-gradient-to-b from-black via-[#0a0f1f] to-black text-white px-6 md:px-16 py-16 font-sans"
     >
+      {/* Cursor Effect */}
+      <SplashCursor /> {/* ✅ put inside section so it overlays */}
+
       {/* Title */}
       <h1
         className="text-4xl md:text-6xl font-extrabold text-center mb-12"
@@ -170,7 +174,7 @@ function Events() {
       </div>
 
       {/* Events Grid */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto relative z-10">
         {eventsData[activeTab].map((event, index) => (
           <EventCard key={`${activeTab}-${index}`} event={event} />
         ))}

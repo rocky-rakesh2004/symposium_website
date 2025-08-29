@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Lightning from "../components/Lighting";
 import TextType from "../components/TextType";
 
+
 // 🎆 Fireworks + Rockets Component
 function Fireworks() {
   useEffect(() => {
