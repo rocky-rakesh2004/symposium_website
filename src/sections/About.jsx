@@ -1,5 +1,5 @@
 import { FaTrophy, FaUsers, FaLaptopCode } from "react-icons/fa";
-import Logo from "../assets/image.png";
+import Logo from "../assets/Logo2.png";
 
 
 function About() {
