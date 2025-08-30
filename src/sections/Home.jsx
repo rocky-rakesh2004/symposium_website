@@ -122,33 +122,37 @@ function Home() {
       {/* Foreground Content */}
       <div className="absolute text-center px-6 z-10" id="home">
         {/* Heading */}
-<TextType
-  text={[
-    "AAA College of Engineering and Technology",
-    "Department of Computer Science and Engineering",
-    "National-Level Technical Symposium 2k25",
-  ]}
-  typingSpeed={80}
-  pauseDuration={800}
-  showCursor={true}
-  cursorCharacter="|"
-  className="text-4xl md:text-6xl font-extrabold heading bg-gradient-to-r from-cyan-300 via-sky-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(0,255,255,0.9)]"
-/>
+        <TextType
+          text={[
+            "AAA College of Engineering and Technology",
+            "Department of Computer Science and Engineering",
+            "National-Level Technical Symposium 2k25",
+          ]}
+          typingSpeed={80}
+          pauseDuration={800}
+          showCursor={true}
+          cursorCharacter="|"
+          className="text-4xl md:text-6xl font-extrabold heading bg-gradient-to-r from-cyan-300 via-sky-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(0,255,255,0.9)]"
+        />
 
 
         {/* Countdown OR Live OR Ended */}
         {typeof timeLeft === "object" ? (
           // ⏳ Countdown
-          <div className="mt-10 flex justify-center gap-6 text-white">
+          <div className="mt-10 flex flex-wrap justify-center gap-3 sm:gap-6 text-white">
             {Object.entries(timeLeft || {}).map(([label, value]) => (
               <div
                 key={label}
-                className="flex flex-col items-center bg-gradient-to-br from-[#012b36]/80 to-[#014a5b]/60 rounded-2xl px-5 py-4 shadow-lg backdrop-blur-md border border-cyan-400/40 hover:scale-105 transition-all duration-300"
+                className="flex flex-col items-center bg-gradient-to-br from-[#012b36]/80 to-[#014a5b]/60 
+                   rounded-2xl px-3 py-3 sm:px-5 sm:py-4 shadow-lg backdrop-blur-md 
+                   border border-cyan-400/40 hover:scale-105 transition-all duration-300 
+                   min-w-[70px] sm:min-w-[100px]"
               >
-                <span className="text-3xl md:text-4xl font-bold text-cyan-300 drop-shadow-[0_0_12px_rgba(0,255,255,0.9)]">
+                <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-cyan-300 
+                         drop-shadow-[0_0_12px_rgba(0,255,255,0.9)]">
                   {value}
                 </span>
-                <span className="text-sm md:text-base text-sky-200 uppercase tracking-wider">
+                <span className="text-xs sm:text-sm md:text-base text-sky-200 uppercase tracking-wider">
                   {label}
                 </span>
               </div>
@@ -156,44 +160,46 @@ function Home() {
           </div>
         ) : timeLeft === null ? (
           // 🎇 Live (within 24 hours)
-          <h2 className="mt-12 text-3xl md:text-5xl font-extrabold text-yellow-300 drop-shadow-[0_0_25px_rgba(255,255,0,0.9)] animate-bounce">
+          <h2 className="mt-12 text-2xl sm:text-3xl md:text-5xl font-extrabold text-yellow-300 
+                 drop-shadow-[0_0_25px_rgba(255,255,0,0.9)] animate-bounce">
             🎆 Symposium Started 🎉
           </h2>
         ) : (
-          // ✅ After 24 hours → only old design remains
-          <h2 className="mt-12 text-2xl md:text-4xl font-bold text-gray-300 italic">
+          // ✅ After 24 hours → old design
+          <h2 className="mt-12 text-lg sm:text-2xl md:text-4xl font-bold text-gray-300 italic">
             Thank you for joining Symposium 2k25 💡
           </h2>
         )}
 
-       {/* Buttons only visible before start */}
-{/* Buttons only visible before start */}
-{typeof timeLeft === "object" && (
-  <div className="mt-10 flex flex-col items-center gap-6">
-    {/* Learn More Button */}
-    <a
-      href="#schedule"
-      className="inline-block bg-red-600 text-white font-bold px-10 py-3 rounded-2xl shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-[0_0_25px_rgba(255,0,0,0.9)] animate-[pulseGlow_1.8s_ease-in-out_infinite]"
-    >
-      Events Schedule
-    </a>
 
-    {/* Register Button inside StarBorder */}
-    <StarBorder
-      as="a"
-      href="#register"
-      className="bg-orange-500 text-white font-bold  hover:scale-110 animate-[pulseGlow_1.8s_ease-in-out_infinite]"
-      color="cyan"
-      speed="5s"
-    >
-      Register Now !
-    </StarBorder>
-  </div>
-)}
+        {/* Buttons only visible before start */}
+        {/* Buttons only visible before start */}
+        {typeof timeLeft === "object" && (
+          <div className="mt-10 flex flex-col items-center gap-6">
+            {/* Learn More Button */}
+            <a
+              href="#schedule"
+              className="inline-block bg-red-600 text-white font-bold px-10 py-3 rounded-2xl shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-[0_0_25px_rgba(255,0,0,0.9)] animate-[pulseGlow_1.8s_ease-in-out_infinite]"
+            >
+              Events Schedule
+            </a>
+
+            {/* Register Button inside StarBorder */}
+            <StarBorder
+              as="a"
+              href="#events"
+              className="bg-orange-500 text-white font-bold  hover:scale-110 animate-[pulseGlow_1.8s_ease-in-out_infinite]"
+              color="cyan"
+              speed="5s"
+            >
+              Register Now !
+            </StarBorder>
+          </div>
+        )}
 
 
 
-        
+
       </div>
     </div>
   );

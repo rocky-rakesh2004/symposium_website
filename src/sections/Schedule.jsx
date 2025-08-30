@@ -8,9 +8,9 @@ function Schedule() {
   const scheduleData = {
     1: {
       morning: [
-        { time: "9:00 AM - 12:00 PM", title: "UI/UX", location: "CSE LAB 311" },
-        { time: "9:00 AM - 1:00 PM", title: "Technical Quiz", location: "5th floor - 510" },
-        { time: "9:00 AM - 12:00 PM", title: "FF-MAX & BGMI", location: "5th floor (514, 515)" },
+        { time: "11:00 AM - 1:00 PM", title: "StartUp Arena", location: "SH" },
+        { time: "11:00 AM - 12:30 PM", title: "Back Track", location: "CSE LAB:01" },
+        { time: "11:00 AM - 12:30 PM", title: "Algo Arena", location: "CSE LAB:02" },
       ],
       afternoon: [
         { time: "1:00 PM - 3:00 PM", title: "Debugging", location: "5th floor - 511" },

@@ -10,7 +10,6 @@ const Navbar = () => {
     { label: "About", href: "#about" },
     { label: "Schedule", href: "#schedule" },
     { label: "Events", href: "#events" },
-    { label: "Register", href: "#register" },
   ];
 
   return (

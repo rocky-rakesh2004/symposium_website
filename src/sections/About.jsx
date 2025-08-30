@@ -103,7 +103,7 @@ function About() {
           <img
             src={Logo}
             alt="Symposium Event"
-            className="absolute bottom-[-40px] right-[-40px] w-48 rounded-2xl shadow-lg border-4 border-cyan-300/40 
+            className="absolute bottom-[-40px] right-[-15px] w-48 rounded-2xl shadow-lg border-4 border-cyan-300/40 
             transition-transform duration-500 hover:-rotate-2 hover:scale-105 
             hover:shadow-cyan-400/60 hover:shadow-xl bg-black p-2"
           />
