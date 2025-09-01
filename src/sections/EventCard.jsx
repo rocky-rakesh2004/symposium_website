@@ -85,17 +85,15 @@ const EventCard = ({ event }) => {
             <div className="flex gap-3 mb-4">
               <button
                 onClick={() => setTab("details")}
-                className={`px-4 py-2 rounded-lg ${
-                  tab === "details" ? "bg-orange-500" : "bg-gray-700"
-                }`}
+                className={`px-4 py-2 rounded-lg ${tab === "details" ? "bg-orange-500" : "bg-gray-700"
+                  }`}
               >
                 Details
               </button>
               <button
                 onClick={() => setTab("rules")}
-                className={`px-4 py-2 rounded-lg ${
-                  tab === "rules" ? "bg-orange-500" : "bg-gray-700"
-                }`}
+                className={`px-4 py-2 rounded-lg ${tab === "rules" ? "bg-orange-500" : "bg-gray-700"
+                  }`}
               >
                 Rules & Prizes
               </button>
@@ -118,10 +116,10 @@ const EventCard = ({ event }) => {
                     {(event.rules && event.rules.length
                       ? event.rules
                       : [
-                          "Original work only.",
-                          "Follow coordinator instructions.",
-                          "Respect time limits.",
-                        ]
+                        "Original work only.",
+                        "Follow coordinator instructions.",
+                        "Respect time limits.",
+                      ]
                     ).map((r, i) => (
                       <li key={i}>{r}</li>
                     ))}
@@ -155,9 +153,15 @@ const EventCard = ({ event }) => {
               </div>
             )}
 
-            <button className="mt-6 w-full bg-gradient-to-r from-orange-500 to-red-500 py-2 rounded-lg">
-              Register Now →
-            </button>
+            {/* Button */}
+            <a href="https://vimalsforecast.netlify.app/" className="mt-6 block">
+              <button className="w-full bg-gradient-to-r from-orange-500 to-red-500 py-2 rounded-lg text-white font-semibold hover:scale-105 transition-transform duration-300">
+                Register Now →
+              </button>
+            </a>
+
+
+
           </div>
         </div>
       )}

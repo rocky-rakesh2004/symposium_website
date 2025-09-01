@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import Lightning from "../components/Lighting";
+import Particles from "../components/Particles";
 import TextType from "../components/TextType";
-import StarBorder from './StarBorder';
+import StarBorder from "./StarBorder";
 
 // 🎆 Fireworks + Rockets Component
 function Fireworks() {
@@ -111,9 +111,18 @@ function Home() {
 
   return (
     <div className="w-full h-screen relative bg-gradient-to-br from-black via-[#010a14] to-[#001b29] flex justify-center items-center overflow-hidden">
-      {/* ⚡ Lightning Background */}
-      <div className="absolute inset-0">
-        <Lightning hue={200} xOffset={0} speed={1} intensity={1} size={1} />
+      {/* 🌌 Particles Background */}
+      <div className="absolute inset-0 z-0">
+        <Particles
+          particleColors={["#ffffff", "#00ffff"]}
+          particleCount={200}
+          particleSpread={10}
+          speed={0.2}
+          particleBaseSize={80}
+          moveParticlesOnHover={true}
+          alphaParticles={false}
+          disableRotation={false}
+        />
       </div>
 
       {/* 🎆 Fireworks only when event is live */}
@@ -134,7 +143,6 @@ function Home() {
           cursorCharacter="|"
           className="text-4xl md:text-6xl font-extrabold heading bg-gradient-to-r from-cyan-300 via-sky-400 to-blue-400 bg-clip-text text-transparent drop-shadow-[0_0_15px_rgba(0,255,255,0.9)]"
         />
-
 
         {/* Countdown OR Live OR Ended */}
         {typeof timeLeft === "object" ? (
@@ -171,8 +179,6 @@ function Home() {
           </h2>
         )}
 
-
-        {/* Buttons only visible before start */}
         {/* Buttons only visible before start */}
         {typeof timeLeft === "object" && (
           <div className="mt-10 flex flex-col items-center gap-6">
@@ -188,7 +194,7 @@ function Home() {
             <StarBorder
               as="a"
               href="#events"
-              className="bg-orange-500 text-white font-bold  hover:scale-110 animate-[pulseGlow_1.8s_ease-in-out_infinite]"
+              className="bg-orange-500 text-white font-bold hover:scale-110 animate-[pulseGlow_1.8s_ease-in-out_infinite]"
               color="cyan"
               speed="5s"
             >
@@ -196,10 +202,6 @@ function Home() {
             </StarBorder>
           </div>
         )}
-
-
-
-
       </div>
     </div>
   );
