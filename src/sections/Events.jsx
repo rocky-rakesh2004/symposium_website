@@ -6,38 +6,52 @@ import SplashCursor from "./SplashCursor"; // ✅ import here
 const eventsData = {
   technical: [
     {
-      title: "Paper Presentation",
-      type: "Competition",
-      description:
-        "Showcase your innovative research papers and emerging tech solutions.",
-      hosts: "Nikhil Srinivasan S, Soorya",
+      title: "Back Track",
+      type: "Coding Competition",
+      description: "A backtrack event is a problem-solving activity where participants explore all possible solutions by trying, undoing, and re-trying different choices to reach the correct outcome.",
+      hosts: "VimalRaj R,Rakesh S",
       image:
-        "https://tse4.mm.bing.net/th/id/OIP.VrOLCd2txAYP1s4JNpwSVQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
-      date: "Apr 25, 2025",
-      time: "9:00 AM – 1:00 PM",
-      venue: "CSE Lab",
-      members: "1–4 members",
-      contacts: "Nikhil: 6369510662, Soorya: 9176313108",
-      rules: ["10 min per team", "Q&A 2–3 mins", "Original work only"],
-      prizes: ["Winner: ₹5000", "Runner-up: ₹3000"],
-      gallery: [
-        "https://images.unsplash.com/photo-1551836022-4c4c79ecde51?auto=format&fit=crop&w=800&q=80",
-        "https://th.bing.com/th/id/R.69a196915f658989e3b2e0188211ccc2?rik=ARm6gOfJ7FBY1Q&riu=http%3a%2f%2fnebulus.aitm.edu.in%2fwp-content%2fuploads%2f2016%2f03%2fPaper-Presentation.jpg&ehk=KqCsfG9pGepHmzZgY2%2bjApQ65dybW43Y7dYsVMxBAeg%3d&risl=&pid=ImgRaw&r=0",
-      ],
+        "https://wallpapers-all.com/uploads/posts/2022-09/1_back_track_4.jpg",
+      date: "OCT 16, 2025",
+      time: "11:00 AM – 12:30 PM",
+      venue: "CSE Lab 2007",
+      members: "1 members(Single Participation Only)",
+      contacts: "VimalRaj : 8072662449, Rakesh : 9360318375",
+      rules: ["Single Participation only Allowed", "Don't Speak to others", "Don't do any Malpractice", "Each person will be given only 20 minites "],
+      prizes: ["Winner:Sheild & Certificates"],
     },
     {
-      title: "Technical Quiz",
-      type: "Quiz",
-      description:
-        "Test your knowledge across multiple domains of science and technology.",
-      hosts: "Preetha P, Muthu Jayashree",
-      image: "https://i.ytimg.com/vi/eBUWqcuu58c/maxresdefault.jpg",
-      date: "Apr 26, 2025",
-      time: "10:00 AM – 12:00 PM",
-      venue: "Seminar Hall",
-      members: "Team of 2",
-      contacts: "Preetha: 9876543210",
+      title: "Innovation",
+      type: "UI & UX Design",
+      description: " UI/UX Innovation – Showcasing creative design ideas and user-centered digital experiences.",
+      hosts: "Vetrivel S,Vishali S",
+      image:
+        "https://wallpapercave.com/wp/wp11742795.jpg",
+      date: "OCT 16, 2025",
+      time: "Round 1:11:00 AM – 12:30 PM & Round 2: 2:00 PM - 3.00PM",
+      venue: "CSE Lab 2008",
+      members: "1 members(Single Participation Only)",
+      contacts: "Vetrivel : 7200564266, Vishali:7358453631",
+      rules: ["Single Participation only Allowed", "Don't Speak to others", "Don't Use AI Tools for Designing Ideas", "Each person will be given 1 hours "],
+      prizes: ["Winner:Sheild & Certificates"],
     },
+
+    {
+      title: "Startup Arena",
+      type: "Presentation",
+      description: " Startup Arena Presentation is an event where participants pitch innovative business ideas or startup concepts to showcase creativity and entrepreneurial skills.",
+      hosts: "Sanjay G,Sutakar SJ",
+      image:
+        "https://asperbrothers.com/wp-content/uploads/2023/11/featuredimage_eventsforstartups-e1701268834337-853x470.jpg",
+      date: "OCT 16, 2025",
+      time: "11:00 AM – 12:30 PM",
+      venue: "Seminar Hall 2003",
+      members: " Team of 3 Members Maximum",
+      contacts: "Sanjay : 9489467166, Sutakar: 9080665031",
+      rules: ["Don't Argue with the Coordinaters", "Single OR Duo Participations are also Allowed", "Each Team will be given 5 mins for Presentation"],
+      prizes: ["Winner:Sheild & Certificates"],
+    },
+
     {
       title: "Code Debugging",
       type: "Challenge",
@@ -77,22 +91,38 @@ const eventsData = {
   ],
   nonTechnical: [
     {
-      title: "Treasure Hunt",
-      type: "Fun Event",
+      title: "Pix Link",
+      type: "Quiz",
       description:
-        "Solve riddles and race to uncover hidden treasures on campus.",
-      hosts: "Rohit K, Shalini",
+        "Pixlink is a fun event where participants connect related pictures to identify the correct word, theme, or concept.",
+      hosts: "Pruthiv Raman K, Konnaiyandi K",
       image:
-        "https://st3.depositphotos.com/1428083/16095/i/450/depositphotos_160959434-stock-photo-treasure-hunt-parchment.jpg",
+        "https://as1.ftcdn.net/v2/jpg/02/04/52/72/1000_F_204527293_o9ut8AIm2PaXQg22sSqLMH354X8weheJ.jpg",
+      date: "OCT 16, 2025",
+      time: "Round 1 : 12:30 PM – 1:30 PM & Round 2 : 2:15 PM – 3:00 PM ",
+      venue: "3rd Year CSE (Hall No:2002)",
+      members: "Team of 2 Members",
+      contacts: "Pruthiv Raman: 7094125010, Konnaiyandi: 9025814697",
+      rules: ["2 Participation per Team", "Don't do any Malpractice", "Each Team will be given only 1 hours", "Shortlisted teams going to Round 2 After Lunch"],
+      prizes: ["Winner:Sheild & Certificates"],
+      staffincharge: "MR. Srinivasan",
     },
     {
-      title: "IPL Auction",
-      type: "Simulation",
+      title: "IPL Action",
+      type: "Action",
       description:
-        "Form your dream cricket team in a thrilling mock IPL auction.",
-      hosts: "Vishnu R, Kavya",
+        "Pixlink is a fun event where participants connect related pictures to identify the correct word, theme, or concept.",
+      hosts: "DharaniDharan M, ArunKummar P",
       image:
-        "https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=800&q=80",
+        "https://th.bing.com/th/id/OIP.Xcnr58MzsBrM3K7Lz46FywHaEK?w=289&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3",
+      date: "OCT 16, 2025",
+      time: " 12:30 PM – 1:30 PM ",
+      venue: "3rd Year CSE (Hall No:2001)",
+      members: "Team of 4 Members",
+      contacts: "DharaniDharan M: 9789505506, ArunKumar P: 6379123677",
+      rules: ["4 Participation per Team", "Each Team Should take 11 Players as Per rule"],
+      prizes: ["Winner:Sheild & Certificates"],
+      staffincharge: "MR. ParameshWaran",
     },
     {
       title: "Movie Quiz",
@@ -162,11 +192,10 @@ function Events() {
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`px-6 py-3 rounded-full font-semibold transition-all duration-500 transform ${
-              activeTab === tab
-                ? "bg-gradient-to-r from-cyan-500 to-blue-600 text-black shadow-xl scale-110"
-                : "bg-gray-800 text-white hover:bg-cyan-600 hover:text-black hover:scale-105"
-            }`}
+            className={`px-6 py-3 rounded-full font-semibold transition-all duration-500 transform ${activeTab === tab
+              ? "bg-gradient-to-r from-cyan-500 to-blue-600 text-black shadow-xl scale-110"
+              : "bg-gray-800 text-white hover:bg-cyan-600 hover:text-black hover:scale-105"
+              }`}
           >
             {tab === "technical" ? "Technical Events" : "Non-Technical Events"}
           </button>

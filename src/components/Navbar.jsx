@@ -1,6 +1,6 @@
 import { useState } from "react";
 import GooeyNav from "../sections/GooeyNav"; // make sure this component exists
-import Logo from "../assets/Logo2.png";
+import Logo from "../assets/Logo5.png";
 
 const Navbar = () => {
   const [active, setActive] = useState(0);

@@ -8,15 +8,20 @@ function Schedule() {
   const scheduleData = {
     1: {
       morning: [
-        { time: "11:00 AM - 1:00 PM", title: "StartUp Arena", location: "SH" },
-        { time: "11:00 AM - 12:30 PM", title: "Back Track", location: "CSE LAB:01" },
-        { time: "11:00 AM - 12:30 PM", title: "Algo Arena", location: "CSE LAB:02" },
+        { time: "11:00 AM - 12:30 PM", title: "Back Track", location: "CSE LAB:(2007)" },
+        { time: "Round 1 : 11:00 AM - 12:30 PM", title: "Innovation(UI&UX)", location: "CSE LAB:(2008)" },
+         { time: "11:00 AM - 1:00 PM", title: "StartUp Arena", location: "Seminar Hall(2003)" },
+        { time: "11:00 AM - 1:00 PM", title: "Algo Arena", location: "Seminar Hall" },
+        { time: "12:30 PM - 1:30 PM", title: "PixLink(Round 1)", location: "3rd Year CSE (Hall No:2002)" },
+        { time: "12:30 PM - 1:30 PM", title: "IPL Auction", location: "3rd Year CSE (Hall No:2001)" },
       ],
       afternoon: [
+        { time: "2:15 PM - 3:00 PM", title: "PixLink(Round 2)", location: "3rd Year CSE (Hall No:2002)" },
+        { time: "Round 2 : 2:00 PM - 3:00 PM", title: "Innovation(UI&UX)", location: "CSE LAB:(2008)" },
         { time: "1:00 PM - 3:00 PM", title: "Debugging", location: "5th floor - 511" },
         { time: "1:00 PM - 3:00 PM", title: "Paper Presentation", location: "CSE Lab (5TH Floor)" },
         { time: "2:00 PM - 5:00 PM", title: "Sparkathon", location: "CSE Lab (5TH Floor)" },
-        { time: "2:00 PM - 4:00 PM", title: "IPL Auction", location: "CSE 2year-5122" },
+
         { time: "3:00 PM - 4:00 PM", title: "Quiz", location: "CSE LAB-2001" },
         { time: "2:00 PM - 6:00 PM", title: "Sports", location: "Turf & Ground" },
       ],
@@ -54,11 +59,10 @@ function Schedule() {
           <button
             key={day}
             onClick={() => setActiveDay(day)}
-            className={`px-6 py-2 rounded-full font-medium transition-all duration-300 shadow-md ${
-              activeDay === day
-                ? "bg-cyan-500 text-white shadow-cyan-400/40 scale-105"
-                : "bg-gray-800 text-gray-300 hover:bg-gray-700"
-            }`}
+            className={`px-6 py-2 rounded-full font-medium transition-all duration-300 shadow-md ${activeDay === day
+              ? "bg-cyan-500 text-white shadow-cyan-400/40 scale-105"
+              : "bg-gray-800 text-gray-300 hover:bg-gray-700"
+              }`}
           >
             Day {day}
           </button>
