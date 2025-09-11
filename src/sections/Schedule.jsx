@@ -8,27 +8,25 @@ function Schedule() {
   const scheduleData = {
     1: {
       morning: [
-        { time: "11:00 AM - 12:30 PM", title: "Back Track", location: "CSE LAB:(2007)" },
-        { time: "Round 1 : 11:00 AM - 12:30 PM", title: "Innovation(UI&UX)", location: "CSE LAB:(2008)" },
-         { time: "11:00 AM - 1:00 PM", title: "StartUp Arena", location: "Seminar Hall(2003)" },
-        { time: "11:00 AM - 1:00 PM", title: "Algo Arena", location: "Seminar Hall" },
-        { time: "12:30 PM - 1:30 PM", title: "PixLink(Round 1)", location: "3rd Year CSE (Hall No:2002)" },
+        { time: "Round 1 : 11:00 AM - 12:30 PM", title: "Innovation(UI&UX)", location: "ECE LAB:(2107)" },
+        { time: "Round 1 : 12:30 PM - 1:30 PM", title: "PixLink(Quiz)", location: "3rd Year CSE (Hall No:2002)" },
+        { time: "Round 1 : 12:00 PM - 1:30 PM", title: "Pressure Pause(Mathi Yosi)", location: "2nd Year CSE A (Hall No:2011)" },
+        { time: "11:00 AM - 12:30 PM", title: "Back Track(Coading Competition)", location: "CSE LAB:(2007)" },
+        { time: "11:00 AM - 1:00 PM", title: "StartUp Arena(Presentation)", location: "Seminar Hall(2003)" },
+        { time: "11:00 AM - 1:30 PM", title: "Algo Arena(Coading Challenge)", location: "CSE LAB:(2008)" },
         { time: "12:30 PM - 1:30 PM", title: "IPL Auction", location: "3rd Year CSE (Hall No:2001)" },
       ],
       afternoon: [
-        { time: "2:15 PM - 3:00 PM", title: "PixLink(Round 2)", location: "3rd Year CSE (Hall No:2002)" },
-        { time: "Round 2 : 2:00 PM - 3:00 PM", title: "Innovation(UI&UX)", location: "CSE LAB:(2008)" },
-        { time: "1:00 PM - 3:00 PM", title: "Debugging", location: "5th floor - 511" },
-        { time: "1:00 PM - 3:00 PM", title: "Paper Presentation", location: "CSE Lab (5TH Floor)" },
-        { time: "2:00 PM - 5:00 PM", title: "Sparkathon", location: "CSE Lab (5TH Floor)" },
-
-        { time: "3:00 PM - 4:00 PM", title: "Quiz", location: "CSE LAB-2001" },
-        { time: "2:00 PM - 6:00 PM", title: "Sports", location: "Turf & Ground" },
+        
+        { time: "Round 2 : 2:00 PM - 3:00 PM", title: "Innovation(UI&UX)", location: "ECE LAB:(2107)" },
+        { time: "Round 2 : 2:15 PM - 3:00 PM", title: "PixLink(Quiz)", location: "3rd Year CSE (Hall No:2002)" },
+        { time: "Round 2 : 2:30 PM - 3:30 PM", title: "Pressure Pause(Mathi Yosi)", location: "2nd Year CSE A (Hall No:2011)" },
+        { time: "2:30 PM - 4:00 PM", title: "Gaming Arena(E-Sports)", location: "ECE LAB:(2109)" },
       ],
     },
     2: {
-      morning: [{ time: "10:00 AM - 12:00 PM", title: "Workshop", location: "Auditorium" }],
-      afternoon: [{ time: "1:00 PM - 3:00 PM", title: "Valedictory Function", location: "Main Hall" }],
+      morning: [{ time: "10:00 AM - 1:00 PM", title: "Hackathon", location: "Kamarajar Auditorium" }],
+      
     },
   };
 

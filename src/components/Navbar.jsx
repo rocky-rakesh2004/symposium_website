@@ -1,9 +1,11 @@
 import { useState } from "react";
-import GooeyNav from "../sections/GooeyNav"; // make sure this component exists
-import Logo from "../assets/Logo5.png";
+import { Menu, X } from "lucide-react"; // npm install lucide-react
+import Logo from "../assets/Logo5.png"; // update the path if needed
+import GooeyNav from "../sections/GooeyNav"; // your gooey nav component
 
 const Navbar = () => {
   const [active, setActive] = useState(0);
+  const [open, setOpen] = useState(false);
 
   const links = [
     { label: "Home", href: "#home" },
@@ -24,12 +26,13 @@ const Navbar = () => {
             alt="TechFusion Logo"
             className="w-16 h-12 md:w-20 md:h-20 drop-shadow-[0_0_15px_rgba(0,255,255,0.8)]"
           />
-          <h1 className="text-3xl font-bold text-cyan-400 tracking-wide drop-shadow-[0_0_10px_rgba(0,255,255,0.8)]">
+          <h1 className="text-3xl font-bold text-white tracking-wide 
+                         drop-shadow-[0_0_15px_rgba(0,200,255,0.9)]">
             TechFusion
           </h1>
         </div>
 
-        {/* Gooey Navigation */}
+        {/* Desktop Navigation */}
         <div className="hidden md:flex relative">
           <GooeyNav
             items={links.map((l, i) => ({
@@ -46,6 +49,42 @@ const Navbar = () => {
             colors={[1, 2, 3, 4, 5]}
           />
         </div>
+
+        {/* Mobile Hamburger */}
+        <div className="md:hidden">
+          <button
+            onClick={() => setOpen(!open)}
+            className="text-cyan-400 focus:outline-none"
+          >
+            {open ? <X size={32} /> : <Menu size={32} />}
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Dropdown with working animation */}
+      <div
+        className={`md:hidden bg-black/90 backdrop-blur-md border-t border-cyan-400
+                   transform transition-all duration-500 ease-in-out origin-top
+                   ${open ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0 pointer-events-none"}`}
+      >
+        <ul className="flex flex-col items-center py-4 space-y-4">
+          {links.map((l, i) => (
+            <li key={i}>
+              <a
+                href={l.href}
+                onClick={() => {
+                  setActive(i);
+                  setOpen(false);
+                }}
+                className={`text-lg font-semibold ${
+                  active === i ? "text-cyan-400" : "text-white"
+                } hover:text-cyan-300 transition`}
+              >
+                {l.label}
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </nav>
   );

@@ -8,7 +8,7 @@ function Footer() {
         {/* Contact Us */}
         <div>
           <h2 className="text-lg font-bold text-yellow-200 mb-4">CONTACT US</h2>
-          <p>👤President: Imran Nazir, Vishnu Sekaran</p>
+          <p>👤Student Coordinator: S.Imran Nazir, S.Vasanth Kumar, A.Vishnu Sekaran</p>
           <p className="flex items-center gap-2 mt-2">
             <FaPhone />+91 89460 85787 & +91 78670 34914
           </p>

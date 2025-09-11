@@ -107,6 +107,7 @@ const EventCard = ({ event }) => {
                 <li>📍 {event.venue || "TBA"}</li>
                 <li>👥 {event.members || "Individual / Team"}</li>
                 <li>📞 {event.contacts || "Event Coordinator"}</li>
+                <li>👤 {event.staffincharge || "staffincharge"}</li>
               </ul>
             ) : (
               <div className="text-sm space-y-3">

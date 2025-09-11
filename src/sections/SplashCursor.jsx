@@ -551,7 +551,7 @@ function SplashCursor({
           gl.bindFramebuffer(gl.FRAMEBUFFER, target.fbo);
         }
         if (clear) {
-          gl.clearColor(0.0, 0.0, 0.0, 1.0);
+          gl.clearColor(0.0, 0.0, 0.0, 0.1);
           gl.clear(gl.COLOR_BUFFER_BIT);
         }
         gl.drawElements(gl.TRIANGLES, 6, gl.UNSIGNED_SHORT, 0);

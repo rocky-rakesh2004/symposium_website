@@ -92,7 +92,7 @@ function About() {
         <div className="relative">
           {/* Main College Image */}
           <img
-            src="https://www.campusoption.com/images/colleges/gallery/20_01_17_101724_aaa_clg.jpg"
+            src="https://www.joonsquare.com/usermanage/image/business/aaa-college-of-engineering-and-technology-virudhunagar-16158/aaa-college-of-engineering-and-technology-virudhunagar-aaa-college-of-engineering-and-technology-1.jpg"
             alt="College Campus"
             className="rounded-2xl shadow-lg border-4 border-cyan-400/40 
             transition-transform duration-500 hover:rotate-2 hover:scale-105 
