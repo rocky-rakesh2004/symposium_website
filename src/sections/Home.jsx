@@ -84,8 +84,8 @@ function Fireworks() {
 
 function Home() {
   // 🎯 Target start and end times
-  const eventStart = new Date("2025-10-16T09:00:00"); // ✅ Oct 16 9AM
-  const eventEnd = new Date("2025-10-17T09:00:00");   // ✅ +24 hours
+  const eventStart = new Date("2025-10-17T09:00:00"); // ✅ Oct 16 9AM
+  const eventEnd = new Date("2025-10-18T09:00:00");   // ✅ +24 hours
 
   const calculateTimeLeft = () => {
     const now = new Date();

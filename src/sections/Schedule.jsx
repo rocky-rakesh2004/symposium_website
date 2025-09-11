@@ -6,27 +6,30 @@ function Schedule() {
 
   // Schedule Data with Morning & Afternoon
   const scheduleData = {
+   
     1: {
+      morning: [{ time: "10:00 AM - 1:00 PM", title: "Hackathon", location: "Kamarajar Auditorium" }],
+      afternoon:[{time: "10:00 AM - 1:00 PM", title: "Hackathon", location: "Kamarajar Auditorium"}]
+      
+    },
+     2: {
       morning: [
-        { time: "Round 1 : 11:00 AM - 12:30 PM", title: "Innovation(UI&UX)", location: "ECE LAB:(2107)" },
+        { time: "Round 1 : 11:00 AM - 12:30 PM", title: "Innovation(UI&UX)", location: "ECE LAB:(Hall No:2107)" },
         { time: "Round 1 : 12:30 PM - 1:30 PM", title: "PixLink(Quiz)", location: "3rd Year CSE (Hall No:2002)" },
         { time: "Round 1 : 12:00 PM - 1:30 PM", title: "Pressure Pause(Mathi Yosi)", location: "2nd Year CSE A (Hall No:2011)" },
-        { time: "11:00 AM - 12:30 PM", title: "Back Track(Coading Competition)", location: "CSE LAB:(2007)" },
-        { time: "11:00 AM - 1:00 PM", title: "StartUp Arena(Presentation)", location: "Seminar Hall(2003)" },
-        { time: "11:00 AM - 1:30 PM", title: "Algo Arena(Coading Challenge)", location: "CSE LAB:(2008)" },
+        { time: "11:00 AM - 12:30 PM", title: "Back Track(Coading Competition)", location: "CSE LAB:(Hall No:2007)" },
+        { time: "11:00 AM - 1:00 PM", title: "StartUp Arena(Presentation)", location: "Seminar Hall(Hall No:2003)" },
+        { time: "11:00 AM - 1:30 PM", title: "Algo Arena(Coading Challenge)", location: "CSE LAB:(Hall No:2008)" },
+        { time: "11:00 AM - 12:30 PM", title: "Prompt Royale", location: "CSE LAB:(Hall No:2007)" },
         { time: "12:30 PM - 1:30 PM", title: "IPL Auction", location: "3rd Year CSE (Hall No:2001)" },
       ],
       afternoon: [
         
-        { time: "Round 2 : 2:00 PM - 3:00 PM", title: "Innovation(UI&UX)", location: "ECE LAB:(2107)" },
+        { time: "Round 2 : 2:00 PM - 3:00 PM", title: "Innovation(UI&UX)", location: "ECE LAB:(Hall No:2107)" },
         { time: "Round 2 : 2:15 PM - 3:00 PM", title: "PixLink(Quiz)", location: "3rd Year CSE (Hall No:2002)" },
         { time: "Round 2 : 2:30 PM - 3:30 PM", title: "Pressure Pause(Mathi Yosi)", location: "2nd Year CSE A (Hall No:2011)" },
-        { time: "2:30 PM - 4:00 PM", title: "Gaming Arena(E-Sports)", location: "ECE LAB:(2109)" },
+        { time: "2:30 PM - 4:00 PM", title: "Gaming Arena(FreeFire)", location: "ECE LAB:(Hall No:2109)" },
       ],
-    },
-    2: {
-      morning: [{ time: "10:00 AM - 1:00 PM", title: "Hackathon", location: "Kamarajar Auditorium" }],
-      
     },
   };
 
