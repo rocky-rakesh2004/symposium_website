@@ -2,14 +2,14 @@ import { FaClock, FaMapMarkerAlt } from "react-icons/fa";
 import { useState } from "react";
 
 function Schedule() {
-  const [activeDay, setActiveDay] = useState(1);
+  const [activeDay, setActiveDay] = useState(2);
 
   // Schedule Data with Morning & Afternoon
   const scheduleData = {
    
     1: {
       morning: [{ time: "10:00 AM - 1:00 PM", title: "Hackathon", location: "Kamarajar Auditorium" }],
-      afternoon:[{time: "10:00 AM - 1:00 PM", title: "Hackathon", location: "Kamarajar Auditorium"}]
+      afternoon:[{time: "2:00 PM - 4:00 PM", title: "Hackathon", location: "Kamarajar Auditorium"}]
       
     },
      2: {

@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react"; // npm install lucide-react
-import Logo from "../assets/Logo5.png"; // update the path if needed
-import GooeyNav from "../sections/GooeyNav"; // your gooey nav component
+import { Menu, X } from "lucide-react"; 
+import Logo from "../assets/Logo5.png";
+import GooeyNav from "../sections/GooeyNav";
 
 const Navbar = () => {
   const [active, setActive] = useState(0);
@@ -61,11 +61,11 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Dropdown with working animation */}
+      {/* Mobile Dropdown - FIXED HEIGHT ISSUE */}
       <div
-        className={`md:hidden bg-black/90 backdrop-blur-md border-t border-cyan-400
-                   transform transition-all duration-500 ease-in-out origin-top
-                   ${open ? "opacity-100 scale-y-100" : "opacity-0 scale-y-0 pointer-events-none"}`}
+        className={`md:hidden bg-black/90 backdrop-blur-md border-t border-cyan-400 
+                    overflow-hidden transition-[max-height,opacity] duration-500 ease-in-out
+                    ${open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}
       >
         <ul className="flex flex-col items-center py-4 space-y-4">
           {links.map((l, i) => (

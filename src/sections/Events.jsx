@@ -1,7 +1,7 @@
 // src/components/Events.jsx
 import { useState } from "react";
 import EventCard from "./EventCard";
-import SplashCursor from "./SplashCursor"; // ✅ import here
+// import SplashCursor from "./SplashCursor"; 
 
 const eventsData = {
   technical: [
@@ -173,7 +173,7 @@ function Events() {
       className="relative w-full min-h-screen bg-gradient-to-b from-black via-[#0a0f1f] to-black text-white px-6 md:px-16 py-16 font-sans"
     >
       {/* Cursor Effect */}
-      <SplashCursor /> {/* ✅ put inside section so it overlays */}
+      {/* <SplashCursor />  */}
 
       {/* Title */}
       <h1
