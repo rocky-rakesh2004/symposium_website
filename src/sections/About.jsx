@@ -5,13 +5,12 @@ import Logo from "../assets/Logo5.png";
 function About() {
   return (
     <section
-      id="about"
       className="relative w-full min-h-screen bg-black text-white px-6 md:px-16 py-16 flex flex-col md:flex-row items-center gap-10"
     >
 
 
       {/* Left Content */}
-      <div className="md:w-1/2 space-y-6 font-bold text-cyan-300 relative z-10">
+      <div className="md:w-1/2 space-y-6 font-bold text-cyan-300 relative z-10" id="about">
         <h1
           className="text-4xl md:text-6xl font-extrabold text-white tracking-wide text-center md:text-left"
           style={{

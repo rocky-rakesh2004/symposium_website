@@ -61,13 +61,12 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Dropdown - FIXED HEIGHT ISSUE */}
+      {/* Mobile Dropdown (Transparent background, no box) */}
       <div
-        className={`md:hidden bg-black/90 backdrop-blur-md border-t border-cyan-400 
-                    overflow-hidden transition-[max-height,opacity] duration-500 ease-in-out
-                    ${open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}
+        className={`md:hidden overflow-hidden transition-[max-height,opacity] duration-500 ease-in-out
+                    ${open ? "max-h-60 opacity-100" : "max-h-0 opacity-0"}`}
       >
-        <ul className="flex flex-col items-center py-4 space-y-4">
+        <ul className="flex flex-col items-center py-4 space-y-4 bg-transparent">
           {links.map((l, i) => (
             <li key={i}>
               <a

@@ -16,7 +16,8 @@ const EventCard = ({ event }) => {
   const category = event.category ?? event.type ?? "Event";
 
   return (
-    <div className="bg-gradient-to-br from-[#0f172a] to-[#1e293b] border border-cyan-400/30 rounded-3xl shadow-lg p-6 flex flex-col justify-between hover:scale-105 hover:shadow-cyan-400/50 transition-all duration-500 hover:-rotate-1">
+    <div className="bg-gradient-to-br from-[#0f172a] to-[#1e293b] border border-cyan-400/30 rounded-3xl shadow-lg p-6 flex flex-col justify-between hover:scale-105 hover:shadow-cyan-400/50 transition-all duration-500 hover:-rotate-1
+">
       {/* Image */}
       <img
         src={event.image}
@@ -155,7 +156,7 @@ const EventCard = ({ event }) => {
             )}
 
             {/* Button */}
-            <a href="https://vimalsforecast.netlify.app/" className="mt-6 block">
+            <a href="https://forms.gle/kxupsWx3bSiEf9az6" className="mt-6 block">
               <button className="w-full bg-gradient-to-r from-orange-500 to-red-500 py-2 rounded-lg text-white font-semibold hover:scale-105 transition-transform duration-300">
                 Register Now →
               </button>

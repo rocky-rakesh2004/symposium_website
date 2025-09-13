@@ -36,7 +36,7 @@ const eventsData = {
       contacts: "Vetrivel : 7200564266, Vishali:7358453631",
       rules: ["Single Participation only Allowed", "Don't Speak to others", "Don't Use AI Tools for Designing Ideas", "Each person will be given 1 hours "],
       prizes: ["Winner:Sheild & Certificates"],
-      staffincharge: "Mrs.Sowmiya",
+      staffincharge: "Mrs.P.Rajapriya",
     },
 
     {
@@ -53,7 +53,7 @@ const eventsData = {
       contacts: "Sanjay : 9489467166, Sutakar: 9080665031",
       rules: ["Single Participation only Allowed", "Don't do any Malpractice", "Don't Argue with the Coordinaters",],
       prizes: ["Winner:Sheild & Certificates"],
-      staffincharge: "Mrs.Sowmiya",
+      staffincharge: "Mrs.P.Rajapriya",
     },
     {
       title: "Algo Arena",
@@ -106,7 +106,7 @@ const eventsData = {
       contacts: "Pruthiv Raman: 7094125010, Konnaiyandi: 9025814697",
       rules: ["2 Participation per Team", "Don't do any Malpractice", "Each Team will be given only 1 hours", "Shortlisted teams going to Round 2 After Lunch"],
       prizes: ["Winner:Sheild & Certificates"],
-      staffincharge: "Mr.S.Srinivasan",
+      staffincharge: "Mr.R.Srinivasan",
     },
     {
       title: "IPL Auction",
@@ -123,7 +123,7 @@ const eventsData = {
       contacts: "DharaniDharan M: 9789505506, ArunKumar P: 6379123677",
       rules: ["4 Participation per Team", "Each Team Should take 11 Players as Per rule"],
       prizes: ["Winner:Sheild & Certificates"],
-      staffincharge: ["Mr. ParameshWaran"],
+      staffincharge: ["Mr.ParameshWaran"],
     },
     {
       title: "Pressure Pause",
@@ -143,8 +143,8 @@ const eventsData = {
       staffincharge: "Mrs.Sowmiya",
     },
     {
-      title: "Gaming Arena",
-      type: "E-Sports",
+      title: "E-Sports",
+      type: "FreeFire",
       description:
         "Battle in popular multiplayer games like Valorant, Free Fire.",
       hosts: "Madhan Kumar N , John J",
@@ -157,7 +157,7 @@ const eventsData = {
       contacts: "Madhankumar :8072819766,John :8610665170",
       rules: ["Team Size: 4 members per squad (Solo/Duo may be mentioned if allowed)", "Mode: Battle Royale (Custom Room)", "Maps: Bermuda / Purgatory / Kalahari (decide and announce before match)", "Hacking/Cheating: Any use of hacks, mods, or third-party tools leads to instant disqualification."],
       prizes: ["Winner:Sheild & Certificates"],
-      staffincharge: "Mrs.Sowmiya",
+      staffincharge: "Mr.S.Sunder Stalin",
     },
 
 

@@ -110,7 +110,7 @@ function Home() {
   }, []);
 
   return (
-    <div className="w-full h-screen relative bg-gradient-to-br from-black via-[#010a14] to-[#001b29] flex justify-center items-center overflow-hidden">
+    <div className="w-full h-screen relative bg-gradient-to-br from-black via-[#010a14] to-[#001b29] flex justify-center items-center overflow-hidden "  id="home">
       {/* 🌌 Particles Background */}
       <div className="absolute inset-0 z-0">
         <Particles
@@ -129,7 +129,7 @@ function Home() {
       {timeLeft === null && <Fireworks />}
 
       {/* Foreground Content */}
-      <div className="absolute text-center px-6 z-10" id="home">
+      <div className="absolute text-center px-6 z-10">
         {/* Heading */}
         <TextType
           text={[
@@ -193,7 +193,7 @@ function Home() {
             {/* Register Button inside StarBorder */}
             <StarBorder
               as="a"
-              href="#events"
+              href="https://forms.gle/kxupsWx3bSiEf9az6"
               className="bg-orange-500 text-white font-bold hover:scale-110 animate-[pulseGlow_1.8s_ease-in-out_infinite]"
               color="cyan"
               speed="5s"

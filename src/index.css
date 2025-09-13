@@ -218,8 +218,9 @@ h1, h2, h3, .heading {
 }
 
 .gooey-nav-container .effect.filter {
-  filter: blur(7px) contrast(100) blur(0);
+  filter: blur(7px) contrast(100);
   mix-blend-mode: lighten;
+  background: transparent;
 }
 
 .gooey-nav-container .effect.filter::before {
@@ -227,7 +228,7 @@ h1, h2, h3, .heading {
   position: absolute;
   inset: -75px;
   z-index: -2;
-  background: black;
+  background: transparent;
 }
 
 .gooey-nav-container .effect.filter::after {
@@ -255,11 +256,11 @@ h1, h2, h3, .heading {
 .particle,
 .point {
   display: block;
-  opacity: 0;
   width: 20px;
   height: 20px;
   border-radius: 100%;
   transform-origin: center;
+
 }
 
 .particle {
@@ -331,5 +332,3 @@ h1, h2, h3, .heading {
     opacity: 0;
   }
 }
-
-

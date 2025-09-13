@@ -28,7 +28,7 @@ function Schedule() {
         { time: "Round 2 : 2:00 PM - 3:00 PM", title: "Innovation(UI&UX)", location: "ECE LAB:(Hall No:2107)" },
         { time: "Round 2 : 2:15 PM - 3:00 PM", title: "PixLink(Quiz)", location: "3rd Year CSE (Hall No:2002)" },
         { time: "Round 2 : 2:30 PM - 3:30 PM", title: "Pressure Pause(Mathi Yosi)", location: "2nd Year CSE A (Hall No:2011)" },
-        { time: "2:30 PM - 4:00 PM", title: "Gaming Arena(FreeFire)", location: "ECE LAB:(Hall No:2109)" },
+        { time: "2:30 PM - 4:00 PM", title: "E-Sports(FreeFire)", location: "ECE LAB:(Hall No:2109)" },
       ],
     },
   };
