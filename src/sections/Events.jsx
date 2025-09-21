@@ -57,7 +57,7 @@ const eventsData = {
     },
     {
       title: "Algo Arena",
-      type: "Coading Challenge",
+      type: "Coding Challenge",
       description: " Algo Arena is a competitive coding challenge where participants battle their logic, speed, and problem-solving skills to crack algorithmic puzzles and emerge as champions.",
       hosts: "Rithik K , Rohith B",
       image:

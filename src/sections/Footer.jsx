@@ -10,7 +10,7 @@ function Footer() {
           <h2 className="text-lg font-bold text-yellow-200 mb-4">CONTACT US</h2>
           <p>👤Student Coordinator: S.Imran Nazir,     A.Vishnu Sekaran</p>
           <p className="flex items-center gap-2 mt-2">
-            <FaPhone />+91 89460 85787 & +91 78670 34914
+            <FaPhone /> +91 78670 34914 & +91 89460 85787
           </p>
           <p className="flex items-center gap-2 mt-2">
             <FaMapMarkerAlt /> AAA College of Engineering and Technology,
