@@ -6,37 +6,94 @@ function Schedule() {
 
   // Schedule Data with Morning & Afternoon
   const scheduleData = {
-   
     1: {
-      morning: [{ time: "10:00 AM - 1:00 PM", title: "Hackathon", location: "Kamarajar Auditorium" }],
-      afternoon:[{time: "2:00 PM - 4:00 PM", title: "Hackathon", location: "Kamarajar Auditorium"}]
-      
-    },
-     2: {
       morning: [
-        { time: "Round 1 : 11:00 AM - 12:30 PM", title: "Innovation(UI&UX)", location: "ECE LAB:(Hall No:2108)" },
-        { time: "Round 1 : 12:30 PM - 1:30 PM", title: "PixLink(Quiz)", location: "3rd Year CSE (Hall No:2002)" },
-        { time: "Round 1 : 12:00 PM - 1:30 PM", title: "Pressure Pause(Mathi Yosi)", location: "2nd Year CSE A (Hall No:2011)" },
-        { time: "11:00 AM - 12:30 PM", title: "Back Track(Coading Competition)", location: "CSE LAB:(Hall No:2007)" },
-        { time: "11:00 AM - 1:00 PM", title: "StartUp Arena(Presentation)", location: "Seminar Hall(Hall No:2003)" },
-        { time: "11:00 AM - 1:30 PM", title: "Algo Arena(Coading Challenge)", location: "CSE LAB:(Hall No:2008)" },
-        { time: "11:00 AM - 12:30 PM", title: "Prompt Royale", location: "CSE LAB:(Hall No:2007)" },
-        { time: "12:30 PM - 1:30 PM", title: "IPL Auction", location: "3rd Year CSE (Hall No:2001)" },
+        {
+          time: "10:00 AM - 1:00 PM",
+          title: "Hackathon",
+          location: "Kamarajar Auditorium",
+        },
       ],
       afternoon: [
-        
-        { time: "Round 2 : 2:00 PM - 3:00 PM", title: "Innovation(UI&UX)", location: "ECE LAB:(Hall No:2108)" },
-        { time: "Round 2 : 2:15 PM - 3:00 PM", title: "PixLink(Quiz)", location: "3rd Year CSE (Hall No:2002)" },
-        { time: "Round 2 : 2:30 PM - 3:30 PM", title: "Pressure Pause(Mathi Yosi)", location: "2nd Year CSE A (Hall No:2011)" },
-        { time: "2:30 PM - 4:00 PM", title: "E-Sports(FreeFire)", location: "ECE LAB:(Hall No:2109)" },
+        {
+          time: "2:00 PM - 4:00 PM",
+          title: "Hackathon",
+          location: "Kamarajar Auditorium",
+        },
+      ],
+    },
+    2: {
+      morning: [
+        {
+          time: "Round 1 : 11:00 AM - 12:30 PM",
+          title: "Innovation(UI&UX)",
+          location: "ECE LAB:(Hall No:2108)",
+        },
+        {
+          time: "Round 1 : 12:30 PM - 1:30 PM",
+          title: "PixLink(Quiz)",
+          location: "3rd Year CSE (Hall No:2002)",
+        },
+        {
+          time: "Round 1 : 12:00 PM - 1:30 PM",
+          title: "Pressure Pause(Mathi Yosi)",
+          location: "2nd Year CSE A (Hall No:2011)",
+        },
+        {
+          time: "11:00 AM - 12:30 PM",
+          title: "Back Track(coding Competition)",
+          location: "CSE LAB:(Hall No:2007)",
+        },
+        {
+          time: "11:00 AM - 1:00 PM",
+          title: "StartUp Arena(Presentation)",
+          location: "Seminar Hall(Hall No:2003)",
+        },
+        {
+          time: "11:00 AM - 1:30 PM",
+          title: "Algo Arena(coding Challenge)",
+          location: "CSE LAB:(Hall No:2008)",
+        },
+        {
+          time: "11:00 AM - 12:30 PM",
+          title: "Prompt Royale",
+          location: "CSE LAB:(Hall No:2007)",
+        },
+        {
+          time: "12:30 PM - 1:30 PM",
+          title: "IPL Auction",
+          location: "3rd Year CSE (Hall No:2001)",
+        },
+      ],
+      afternoon: [
+        {
+          time: "Round 2 : 2:00 PM - 3:00 PM",
+          title: "Innovation(UI&UX)",
+          location: "ECE LAB:(Hall No:2108)",
+        },
+        {
+          time: "Round 2 : 2:15 PM - 3:00 PM",
+          title: "PixLink(Quiz)",
+          location: "3rd Year CSE (Hall No:2002)",
+        },
+        {
+          time: "Round 2 : 2:30 PM - 3:30 PM",
+          title: "Pressure Pause(Mathi Yosi)",
+          location: "2nd Year CSE A (Hall No:2011)",
+        },
+        {
+          time: "2:30 PM - 4:00 PM",
+          title: "E-Sports(FreeFire)",
+          location: "ECE LAB:(Hall No:2109)",
+        },
       ],
     },
   };
 
   return (
     <section
+      className="w-full min-h-screen bg-gradient-to-b from-black via-[#0a0a13] to-black text-white px-3 md:px-8 py-16 flex flex-col items-center justify-center"
       id="schedule"
-      className="w-full min-h-screen bg-gradient-to-b from-black via-[#0a0a13] to-black text-white px-6 md:px-16 py-16 flex flex-col items-center justify-center"
     >
       {/* Title */}
       <h1
@@ -60,10 +117,11 @@ function Schedule() {
           <button
             key={day}
             onClick={() => setActiveDay(day)}
-            className={`px-6 py-2 rounded-full font-medium transition-all duration-300 shadow-md ${activeDay === day
-              ? "bg-cyan-500 text-white shadow-cyan-400/40 scale-105"
-              : "bg-gray-800 text-gray-300 hover:bg-gray-700"
-              }`}
+            className={`px-6 py-2 rounded-full font-medium transition-all duration-300 shadow-md ${
+              activeDay === day
+                ? "bg-cyan-500 text-white shadow-cyan-400/40 scale-105"
+                : "bg-gray-800 text-gray-300 hover:bg-gray-700"
+            }`}
           >
             Day {day}
           </button>
@@ -75,7 +133,9 @@ function Schedule() {
         {["morning", "afternoon"].map((session) => (
           <div key={session} className="mb-12">
             <h3 className="text-2xl font-semibold text-cyan-400 mb-6 border-b border-cyan-400/40 inline-block px-2">
-              {session === "morning" ? "🌅 Morning Session" : "🌆 Afternoon Session"}
+              {session === "morning"
+                ? "🌅 Morning Session"
+                : "🌆 Afternoon Session"}
             </h3>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -91,7 +151,8 @@ function Schedule() {
                     {event.title}
                   </h3>
                   <div className="flex items-center gap-2 text-gray-400 text-sm mt-2">
-                    <FaMapMarkerAlt className="text-cyan-400" /> {event.location}
+                    <FaMapMarkerAlt className="text-cyan-400" />{" "}
+                    {event.location}
                   </div>
                 </div>
               ))}

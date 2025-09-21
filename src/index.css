@@ -277,6 +277,7 @@ h1, h2, h3, .heading {
   animation: point calc(var(--time)) ease 1 -350ms;
 }
 
+
 @keyframes particle {
   0% {
     transform: rotate(0deg) translate(calc(var(--start-x)), calc(var(--start-y)));
