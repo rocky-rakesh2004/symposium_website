@@ -24,69 +24,69 @@ function Schedule() {
     },
     2: {
       morning: [
-        {
-          time: "Round 1 : 11:00 AM - 12:30 PM",
-          title: "Innovation(UI&UX)",
-          location: "ECE LAB:(Hall No:2108)",
-        },
-        {
-          time: "Round 1 : 12:30 PM - 1:30 PM",
-          title: "PixLink(Quiz)",
-          location: "3rd Year CSE (Hall No:2002)",
-        },
-        {
-          time: "Round 1 : 12:00 PM - 1:30 PM",
-          title: "Pressure Pause(Mathi Yosi)",
-          location: "2nd Year CSE A (Hall No:2011)",
-        },
-        {
-          time: "11:00 AM - 12:30 PM",
-          title: "Back Track(coding Competition)",
-          location: "CSE LAB:(Hall No:2007)",
-        },
-        {
-          time: "11:00 AM - 1:00 PM",
-          title: "StartUp Arena(Presentation)",
-          location: "Seminar Hall(Hall No:2003)",
-        },
-        {
-          time: "11:00 AM - 1:30 PM",
-          title: "Algo Arena(coding Challenge)",
-          location: "CSE LAB:(Hall No:2008)",
-        },
-        {
-          time: "11:00 AM - 12:30 PM",
-          title: "Prompt Royale",
-          location: "CSE LAB:(Hall No:2007)",
-        },
-        {
-          time: "12:30 PM - 1:30 PM",
-          title: "IPL Auction",
-          location: "3rd Year CSE (Hall No:2001)",
-        },
-      ],
-      afternoon: [
-        {
-          time: "Round 2 : 2:00 PM - 3:00 PM",
-          title: "Innovation(UI&UX)",
-          location: "ECE LAB:(Hall No:2108)",
-        },
-        {
-          time: "Round 2 : 2:15 PM - 3:00 PM",
-          title: "PixLink(Quiz)",
-          location: "3rd Year CSE (Hall No:2002)",
-        },
-        {
-          time: "Round 2 : 2:30 PM - 3:30 PM",
-          title: "Pressure Pause(Mathi Yosi)",
-          location: "2nd Year CSE A (Hall No:2011)",
-        },
-        {
-          time: "2:30 PM - 4:00 PM",
-          title: "E-Sports(FreeFire)",
-          location: "ECE LAB:(Hall No:2109)",
-        },
-      ],
+  {
+    time: "Round 1 : 11:00 AM - 12:30 PM",
+    title: "Innovation(UI&UX)",
+    location: "ECE LAB:(Hall No:2108)",
+  },
+  {
+    time: "Round 1 : 12:30 PM - 1:30 PM",
+    title: "PixLink(Quiz)",
+    location: "3rd Year CSE (Hall No:2002)",
+  },
+  {
+    time: "Round 1 : 12:00 PM - 1:30 PM",
+    title: "Pressure Pause(Mathi Yosi)",
+    location: "2nd Year CSE A (Hall No:2011)",
+  },
+  {
+    time: "11:00 AM - 12:30 PM",
+    title: "Back Track(Coding Competition)",
+    location: "CSE LAB:(Hall No:2007)",
+  },
+  {
+    time: "11:00 AM - 1:00 PM",
+    title: "StartUp Arena(Presentation)",
+    location: "Seminar Hall(Hall No:2003)",
+  },
+  {
+    time: "11:00 AM - 1:30 PM",
+    title: "Algo Arena(Coding Challenge)",
+    location: "CSE LAB:(Hall No:2008)",
+  },
+  {
+    time: "11:00 AM - 12:30 PM",
+    title: "Prompt Royale",
+    location: "CSE LAB:(Hall No:2007)",
+  },
+  {
+    time: "12:30 PM - 1:30 PM",
+    title: "IPL Auction",
+    location: "3rd Year CSE (Hall No:2001)",
+  },
+],
+afternoon: [
+  {
+    time: "Round 2 : 2:00 PM - 3:00 PM",
+    title: "Innovation(UI&UX)",
+    location: "ECE LAB:(Hall No:2108)",
+  },
+  {
+    time: "Round 2 : 2:15 PM - 3:00 PM",
+    title: "PixLink(Quiz)",
+    location: "3rd Year CSE (Hall No:2002)",
+  },
+  {
+    time: "Round 2 : 2:30 PM - 3:30 PM",
+    title: "Pressure Pause(Mathi Yosi)",
+    location: "2nd Year CSE A (Hall No:2011)",
+  },
+  {
+    time: "2:30 PM - 4:00 PM",
+    title: "E-Sports(FreeFire)",
+    location: "ECE LAB:(Hall No:2109)",
+  },
+],
     },
   };
 
