@@ -1,7 +1,7 @@
 import React from "react";
 import staff from "../assets/staff.png";
 import staff1 from "../assets/senthil.jpg"
-import staff2 from "../assets/rajeshwari.jpg"
+import staff2 from "../assets/rajeshwari.JPG"
 import hod from "../assets/hod.jpg"
 
 const Staff = () => {
